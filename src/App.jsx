@@ -4,43 +4,31 @@
 
 //setiap nama fuction dimulai huruf gede
 
-function Contoh1(){
-  return <h1>Judul Berita</h1>
+function Nama({nama}){
+  return<h3>nama: {nama}</h3>
 }
 
-function Artikel1(){
-  return<div>
-    <h1>Judul Rtikel 1</h1>
-    <p>isi artikel 1</p>
-  </div>
+function NIM({nim}){
+  return<h1>NIM: {nim}</h1>
 }
-function Artikel2(){
-  return<div>
-    <h1>Judul Rtikel 2</h1>
-    <p>isi artikel 2</p>
-  </div>
-}
-function Artikel3(){
-  return<div>
-    <h1>Judul Rtikel 3</h1>
-    <p>isi artikel 3</p>
-  </div>
-}
+function Mhs(){
+  const mahasiswa = {
+    nama: "Adi Priyo Pangestu",
+    nim: "A11.2023.15267"
+  }
 
-function Contoh2() {
   return <div>
-  <h1>Judul Berita</h1>
-  <p>isi berita yang panjang</p>
+    <Nama nama={mahasiswa.nama} />
+    <NIM nim={mahasiswa.nim} />
   </div>
 }
+
 
 //function utaman di file ini 
 function App(){
   return (
     <div>
-      <Artikel1/>
-      <Artikel2/>
-      <Artikel3/>
+      <mhs />
     </div>
   )
 }
